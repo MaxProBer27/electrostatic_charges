@@ -222,12 +222,12 @@ class charges_animation():
 
 
 anim = charges_animation(magnetic_field = True, stream = True,
-                         density = 4, full_screen=False)
-anim.setup_fig_ax(450,color="white")
-anim.set_moving_charge(x = 200, y = 0,
-                       vx = 0, vy = -50,
+                         density = 4, full_screen=True)
+anim.setup_fig_ax(300,color="black")
+anim.set_moving_charge(x = 200, y = 150,
+                       vx = 20, vy = -50,
                        F = 200)
 anim.set_static_charges(n_charges = 3)
-anim.set_field(c = 0.4,alpha = 0.8)
-#anim.Poincare_Mapping(n = 10, cycles = 1_000_000, lim = 300, figsize=300)
+anim.set_field(c = 0,alpha = 0.2)
+# anim.Poincare_Mapping(n = 10, cycles = 1_000_000, lim = 300, figsize=300)
 anim.animate(1)
